@@ -15,6 +15,7 @@
 		F39D75552CAD390F0080D20A /* CalendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D75542CAD390F0080D20A /* CalendarUITests.swift */; };
 		F39D75572CAD390F0080D20A /* CalendarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D75562CAD390F0080D20A /* CalendarUITestsLaunchTests.swift */; };
 		F39D75662CAD3D7C0080D20A /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = F39D75652CAD3D7C0080D20A /* FSCalendar */; };
+		F39D756A2CAD40E30080D20A /* fscalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D75692CAD40E30080D20A /* fscalendar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		F39D75502CAD390F0080D20A /* CalendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalendarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F39D75542CAD390F0080D20A /* CalendarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarUITests.swift; sourceTree = "<group>"; };
 		F39D75562CAD390F0080D20A /* CalendarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F39D75692CAD40E30080D20A /* fscalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fscalendar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 		F39D752D2CAD390E0080D20A = {
 			isa = PBXGroup;
 			children = (
+				F39D75682CAD40CC0080D20A /* fscalendar */,
 				F39D75382CAD390E0080D20A /* Calendar */,
 				F39D75492CAD390F0080D20A /* CalendarTests */,
 				F39D75532CAD390F0080D20A /* CalendarUITests */,
@@ -135,6 +138,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F39D75682CAD40CC0080D20A /* fscalendar */ = {
+			isa = PBXGroup;
+			children = (
+				F39D75692CAD40E30080D20A /* fscalendar.swift */,
+			);
+			path = fscalendar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +286,7 @@
 			files = (
 				F39D753C2CAD390E0080D20A /* CalendarView.swift in Sources */,
 				F39D753A2CAD390E0080D20A /* CalendarApp.swift in Sources */,
+				F39D756A2CAD40E30080D20A /* fscalendar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
