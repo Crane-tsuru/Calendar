@@ -17,6 +17,8 @@ struct CalendarView: UIViewRepresentable {
         
         let fsCalendar = FSCalendar()
         
+        fsCalendar.delegate = context.coordinator // SwiftUI側でdidSetを呼び出せるようにする
+        
         // 選択された日付のハイライトの色をカスタマイズ
         fsCalendar.appearance.selectionColor = UIColor.yellow // massColor
         fsCalendar.appearance.titleSelectionColor = UIColor.red // color of date word
