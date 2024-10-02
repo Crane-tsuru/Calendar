@@ -6,12 +6,16 @@
 //
 
 import SwiftUI
-import FSCalendar
 
 struct ContentView: View {
+    @State var selectedDate: Date?
+    
     var body: some View {
         VStack {
+            CalendarView(selectedDate: $selectedDate)
+                .frame(height: 500)
             
+            Text(selectedDate?.convertDateToString() ?? "日付が選択されていません")
         }
     }
 }
