@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		F39D753A2CAD390E0080D20A /* CalendarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D75392CAD390E0080D20A /* CalendarApp.swift */; };
-		F39D753C2CAD390E0080D20A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D753B2CAD390E0080D20A /* ContentView.swift */; };
+		F39D753C2CAD390E0080D20A /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D753B2CAD390E0080D20A /* CalendarView.swift */; };
 		F39D753E2CAD390F0080D20A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F39D753D2CAD390F0080D20A /* Assets.xcassets */; };
 		F39D75412CAD390F0080D20A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F39D75402CAD390F0080D20A /* Preview Assets.xcassets */; };
 		F39D754B2CAD390F0080D20A /* CalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D754A2CAD390F0080D20A /* CalendarTests.swift */; };
 		F39D75552CAD390F0080D20A /* CalendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D75542CAD390F0080D20A /* CalendarUITests.swift */; };
 		F39D75572CAD390F0080D20A /* CalendarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D75562CAD390F0080D20A /* CalendarUITestsLaunchTests.swift */; };
+		F39D75662CAD3D7C0080D20A /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = F39D75652CAD3D7C0080D20A /* FSCalendar */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		F39D75362CAD390E0080D20A /* Calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F39D75392CAD390E0080D20A /* CalendarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarApp.swift; sourceTree = "<group>"; };
-		F39D753B2CAD390E0080D20A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F39D753B2CAD390E0080D20A /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		F39D753D2CAD390F0080D20A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F39D75402CAD390F0080D20A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F39D75462CAD390F0080D20A /* CalendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F39D75662CAD3D7C0080D20A /* FSCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +80,7 @@
 				F39D75492CAD390F0080D20A /* CalendarTests */,
 				F39D75532CAD390F0080D20A /* CalendarUITests */,
 				F39D75372CAD390E0080D20A /* Products */,
+				F39D75642CAD3D7C0080D20A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				F39D75392CAD390E0080D20A /* CalendarApp.swift */,
-				F39D753B2CAD390E0080D20A /* ContentView.swift */,
+				F39D753B2CAD390E0080D20A /* CalendarView.swift */,
 				F39D753D2CAD390F0080D20A /* Assets.xcassets */,
 				F39D753F2CAD390F0080D20A /* Preview Content */,
 			);
@@ -127,6 +130,13 @@
 			path = CalendarUITests;
 			sourceTree = "<group>";
 		};
+		F39D75642CAD3D7C0080D20A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +153,9 @@
 			dependencies = (
 			);
 			name = Calendar;
+			packageProductDependencies = (
+				F39D75652CAD3D7C0080D20A /* FSCalendar */,
+			);
 			productName = Calendar;
 			productReference = F39D75362CAD390E0080D20A /* Calendar.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +228,9 @@
 				Base,
 			);
 			mainGroup = F39D752D2CAD390E0080D20A;
+			packageReferences = (
+				F39D75632CAD3D480080D20A /* XCRemoteSwiftPackageReference "FSCalendar" */,
+			);
 			productRefGroup = F39D75372CAD390E0080D20A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,7 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F39D753C2CAD390E0080D20A /* ContentView.swift in Sources */,
+				F39D753C2CAD390E0080D20A /* CalendarView.swift in Sources */,
 				F39D753A2CAD390E0080D20A /* CalendarApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -588,6 +604,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F39D75632CAD3D480080D20A /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F39D75652CAD3D7C0080D20A /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F39D75632CAD3D480080D20A /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F39D752E2CAD390E0080D20A /* Project object */;
 }
