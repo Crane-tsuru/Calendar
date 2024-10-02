@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3863F912CAD5B9D00B41F49 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = F3863F902CAD5B9D00B41F49 /* FSCalendar */; };
 		F39D753A2CAD390E0080D20A /* CalendarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D75392CAD390E0080D20A /* CalendarApp.swift */; };
 		F39D753C2CAD390E0080D20A /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D753B2CAD390E0080D20A /* CalendarView.swift */; };
 		F39D753E2CAD390F0080D20A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F39D753D2CAD390F0080D20A /* Assets.xcassets */; };
@@ -14,7 +15,6 @@
 		F39D754B2CAD390F0080D20A /* CalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D754A2CAD390F0080D20A /* CalendarTests.swift */; };
 		F39D75552CAD390F0080D20A /* CalendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D75542CAD390F0080D20A /* CalendarUITests.swift */; };
 		F39D75572CAD390F0080D20A /* CalendarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D75562CAD390F0080D20A /* CalendarUITestsLaunchTests.swift */; };
-		F39D75662CAD3D7C0080D20A /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = F39D75652CAD3D7C0080D20A /* FSCalendar */; };
 		F39D756A2CAD40E30080D20A /* fscalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D75692CAD40E30080D20A /* fscalendar.swift */; };
 		F39D756D2CAD57520080D20A /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D756C2CAD57520080D20A /* Date.swift */; };
 /* End PBXBuildFile section */
@@ -56,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F39D75662CAD3D7C0080D20A /* FSCalendar in Frameworks */,
+				F3863F912CAD5B9D00B41F49 /* FSCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +176,7 @@
 			);
 			name = Calendar;
 			packageProductDependencies = (
-				F39D75652CAD3D7C0080D20A /* FSCalendar */,
+				F3863F902CAD5B9D00B41F49 /* FSCalendar */,
 			);
 			productName = Calendar;
 			productReference = F39D75362CAD390E0080D20A /* Calendar.app */;
@@ -251,7 +251,7 @@
 			);
 			mainGroup = F39D752D2CAD390E0080D20A;
 			packageReferences = (
-				F39D75632CAD3D480080D20A /* XCRemoteSwiftPackageReference "FSCalendar" */,
+				F3863F8F2CAD5B9D00B41F49 /* XCRemoteSwiftPackageReference "FSCalendar" */,
 			);
 			productRefGroup = F39D75372CAD390E0080D20A /* Products */;
 			projectDirPath = "";
@@ -630,7 +630,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F39D75632CAD3D480080D20A /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+		F3863F8F2CAD5B9D00B41F49 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/WenchaoD/FSCalendar";
 			requirement = {
@@ -641,9 +641,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F39D75652CAD3D7C0080D20A /* FSCalendar */ = {
+		F3863F902CAD5B9D00B41F49 /* FSCalendar */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F39D75632CAD3D480080D20A /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			package = F3863F8F2CAD5B9D00B41F49 /* XCRemoteSwiftPackageReference "FSCalendar" */;
 			productName = FSCalendar;
 		};
 /* End XCSwiftPackageProductDependency section */
