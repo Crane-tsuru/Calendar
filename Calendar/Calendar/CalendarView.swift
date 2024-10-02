@@ -10,8 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            CalendarView()
-                .frame(height: 500)
+//            CalendarView().frame(height: 500)
         }
     }
 }

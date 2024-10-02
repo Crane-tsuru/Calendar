@@ -9,9 +9,11 @@ import SwiftUI
 import FSCalendar
 
 struct CalendarView: UIViewRepresentable {
+    @Binding var selectedDate: Date?
     
-    func makeUIView(context: Context) -> some UIView {
-        typealias UIViewType = FSCalendar
+    typealias UIViewType = FSCalendar
+    
+    func makeUIView(context: Context) -> UIViewType {
         
         let fsCalendar = FSCalendar()
         
@@ -28,7 +30,22 @@ struct CalendarView: UIViewRepresentable {
         return fsCalendar
     }
     
-    func updateUIView(_ uiView: UIViewType, context: Context) {
-//        
+    class Coordinator: NSObject, FSCalendarDelegate {
+        var parent: CalendarView
+        
+        init(parent: CalendarView) {
+            self.parent = parent
+        }
+        
+        func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
+            parent.selectedDate = date
+        }
     }
+    
+    func makeCoordinator() -> Coordinator {
+        Coordinator(parent: self)
+    }
+    
+    
+    func updateUIView(_ uiView: UIViewType, context: Context) {}
 }
