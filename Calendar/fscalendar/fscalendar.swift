@@ -19,6 +19,10 @@ struct CalendarView: UIViewRepresentable {
         fsCalendar.appearance.selectionColor = UIColor.yellow // massColor
         fsCalendar.appearance.titleSelectionColor = UIColor.red // color of date word
         
+        // 今日の日付のハイライトの色のオプション
+        fsCalendar.appearance.todayColor = UIColor.green // todays massColor
+        fsCalendar.appearance.titleTodayColor = UIColor.black // todays word color
+    
         
         
         return fsCalendar
