@@ -23,6 +23,8 @@ struct EntryView: View {
     @State private var showModal = false
     
     @State var selectedDate: Date?
+    
+    @State var viewSelector = 0
 
     var body: some View {
         ZStack {
@@ -33,22 +35,28 @@ struct EntryView: View {
             }
             
             NavigationStack {
-                CalendarView(selectedDate: $selectedDate)
-                    .frame(height: 500)
-                    .toolbar {
-                        ToolbarItem(placement: .navigationBarLeading) {
-                            Button(action: {
-                                withAnimation {
-                                    showModal.toggle()
-                                }
-                            }, label: {
-                                Image(systemName: "list.bullet")
-                                    .scaleEffect(1.8)
-                                    .padding(.leading, 20)
-                                    .padding(.top, 30)
-                            })
-                        }
+                VStack {
+                    if viewSelector == 0 {
+                        CalendarView(selectedDate: $selectedDate)
+                    } else if viewSelector == 1 {
+                        OnedayScheduleView()
                     }
+                }
+                .frame(height: 500)
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        Button(action: {
+                            withAnimation {
+                                showModal.toggle()
+                            }
+                        }, label: {
+                            Image(systemName: "list.bullet")
+                                .scaleEffect(1.8)
+                                .padding(.leading, 20)
+                                .padding(.top, 30)
+                        })
+                    }
+                }
             }
             
             // 背景を半透明にしてモーダルをオーバーレイする

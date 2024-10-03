@@ -21,6 +21,7 @@
 		F39D756D2CAD57520080D20A /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D756C2CAD57520080D20A /* Date.swift */; };
 		F3F097122CAEDE26007EA868 /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F097112CAEDE26007EA868 /* EntryView.swift */; };
 		F3F097142CAEDFFC007EA868 /* LeftSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F097132CAEDFFC007EA868 /* LeftSheetView.swift */; };
+		F3F097162CAEE89F007EA868 /* ViewSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F097152CAEE89F007EA868 /* ViewSelect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		F39D756C2CAD57520080D20A /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		F3F097112CAEDE26007EA868 /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
 		F3F097132CAEDFFC007EA868 /* LeftSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSheetView.swift; sourceTree = "<group>"; };
+		F3F097152CAEE89F007EA868 /* ViewSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSelect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		F3747D062CAECB3F00A177BD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F3F097152CAEE89F007EA868 /* ViewSelect.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 			files = (
 				F3913B122CAD8C4A0045F1A8 /* ScheduleGrid.swift in Sources */,
 				F39D753C2CAD390E0080D20A /* CalendarView.swift in Sources */,
+				F3F097162CAEE89F007EA868 /* ViewSelect.swift in Sources */,
 				F39D753A2CAD390E0080D20A /* CalendarApp.swift in Sources */,
 				F39D756A2CAD40E30080D20A /* fscalendar.swift in Sources */,
 				F3F097122CAEDE26007EA868 /* EntryView.swift in Sources */,
