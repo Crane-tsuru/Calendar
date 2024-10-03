@@ -19,6 +19,11 @@
 		F39D75572CAD390F0080D20A /* CalendarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D75562CAD390F0080D20A /* CalendarUITestsLaunchTests.swift */; };
 		F39D756A2CAD40E30080D20A /* fscalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D75692CAD40E30080D20A /* fscalendar.swift */; };
 		F39D756D2CAD57520080D20A /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D756C2CAD57520080D20A /* Date.swift */; };
+		F3F097122CAEDE26007EA868 /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F097112CAEDE26007EA868 /* EntryView.swift */; };
+		F3F097142CAEDFFC007EA868 /* LeftSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F097132CAEDFFC007EA868 /* LeftSheetView.swift */; };
+		F3F097162CAEE89F007EA868 /* ViewSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F097152CAEE89F007EA868 /* ViewSelect.swift */; };
+		F3F0971B2CAEEBC7007EA868 /* LeftSheetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F0971A2CAEEBC7007EA868 /* LeftSheetButton.swift */; };
+		F3F0971D2CAEEC17007EA868 /* SystemName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F0971C2CAEEC17007EA868 /* SystemName.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,11 @@
 		F39D75562CAD390F0080D20A /* CalendarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F39D75692CAD40E30080D20A /* fscalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fscalendar.swift; sourceTree = "<group>"; };
 		F39D756C2CAD57520080D20A /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		F3F097112CAEDE26007EA868 /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
+		F3F097132CAEDFFC007EA868 /* LeftSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSheetView.swift; sourceTree = "<group>"; };
+		F3F097152CAEE89F007EA868 /* ViewSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSelect.swift; sourceTree = "<group>"; };
+		F3F0971A2CAEEBC7007EA868 /* LeftSheetButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSheetButton.swift; sourceTree = "<group>"; };
+		F3F0971C2CAEEC17007EA868 /* SystemName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemName.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +91,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F3913B0C2CAD8A950045F1A8 /* Schedule */ = {
+		F3747D042CAECAE200A177BD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F39D75392CAD390E0080D20A /* CalendarApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F3747D052CAECB2400A177BD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F3F097102CAEDDFA007EA868 /* View */,
+				F39D75382CAD390E0080D20A /* Calendar */,
+				F3913B0C2CAD8A950045F1A8 /* Schedule */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F3747D062CAECB3F00A177BD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F3F097152CAEE89F007EA868 /* ViewSelect.swift */,
+				F3F0971C2CAEEC17007EA868 /* SystemName.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F3747D072CAECBDF00A177BD /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				F3913B112CAD8C4A0045F1A8 /* ScheduleGrid.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F3747D082CAECC8600A177BD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F39D75682CAD40CC0080D20A /* fscalendar */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F3913B0C2CAD8A950045F1A8 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
 				F3913B132CAD948A0045F1A8 /* OnedayScheduleView.swift */,
+				F3747D072CAECBDF00A177BD /* Components */,
 			);
 			path = Schedule;
 			sourceTree = "<group>";
@@ -93,10 +146,12 @@
 		F39D752D2CAD390E0080D20A = {
 			isa = PBXGroup;
 			children = (
-				F3913B0C2CAD8A950045F1A8 /* Schedule */,
-				F39D756B2CAD57420080D20A /* extension */,
-				F39D75682CAD40CC0080D20A /* fscalendar */,
-				F39D75382CAD390E0080D20A /* Calendar */,
+				F3747D082CAECC8600A177BD /* Utils */,
+				F39D753F2CAD390F0080D20A /* Preview Content */,
+				F3747D062CAECB3F00A177BD /* Models */,
+				F3747D052CAECB2400A177BD /* UI */,
+				F3747D042CAECAE200A177BD /* App */,
+				F39D756B2CAD57420080D20A /* Extension */,
 				F39D75492CAD390F0080D20A /* CalendarTests */,
 				F39D75532CAD390F0080D20A /* CalendarUITests */,
 				F39D75372CAD390E0080D20A /* Products */,
@@ -117,10 +172,7 @@
 		F39D75382CAD390E0080D20A /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
-				F39D75392CAD390E0080D20A /* CalendarApp.swift */,
 				F39D753B2CAD390E0080D20A /* CalendarView.swift */,
-				F39D753D2CAD390F0080D20A /* Assets.xcassets */,
-				F39D753F2CAD390F0080D20A /* Preview Content */,
 			);
 			path = Calendar;
 			sourceTree = "<group>";
@@ -129,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				F39D75402CAD390F0080D20A /* Preview Assets.xcassets */,
+				F39D753D2CAD390F0080D20A /* Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -165,12 +218,30 @@
 			path = fscalendar;
 			sourceTree = "<group>";
 		};
-		F39D756B2CAD57420080D20A /* extension */ = {
+		F39D756B2CAD57420080D20A /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				F39D756C2CAD57520080D20A /* Date.swift */,
 			);
-			path = extension;
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F3F097102CAEDDFA007EA868 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3F097112CAEDE26007EA868 /* EntryView.swift */,
+				F3F097132CAEDFFC007EA868 /* LeftSheetView.swift */,
+				F3F097172CAEEBA3007EA868 /* Components */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3F097172CAEEBA3007EA868 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F3F0971A2CAEEBC7007EA868 /* LeftSheetButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,12 +380,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3F0971B2CAEEBC7007EA868 /* LeftSheetButton.swift in Sources */,
 				F3913B122CAD8C4A0045F1A8 /* ScheduleGrid.swift in Sources */,
 				F39D753C2CAD390E0080D20A /* CalendarView.swift in Sources */,
+				F3F097162CAEE89F007EA868 /* ViewSelect.swift in Sources */,
 				F39D753A2CAD390E0080D20A /* CalendarApp.swift in Sources */,
 				F39D756A2CAD40E30080D20A /* fscalendar.swift in Sources */,
+				F3F097122CAEDE26007EA868 /* EntryView.swift in Sources */,
+				F3F097142CAEDFFC007EA868 /* LeftSheetView.swift in Sources */,
 				F39D756D2CAD57520080D20A /* Date.swift in Sources */,
 				F3913B142CAD948A0045F1A8 /* OnedayScheduleView.swift in Sources */,
+				F3F0971D2CAEEC17007EA868 /* SystemName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,7 +553,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Calendar/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Preview Content\"";
 				DEVELOPMENT_TEAM = J37PZZ77T2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -506,7 +582,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Calendar/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Preview Content\"";
 				DEVELOPMENT_TEAM = J37PZZ77T2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
