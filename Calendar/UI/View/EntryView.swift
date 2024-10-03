@@ -21,6 +21,8 @@ import SwiftUI
 
 struct EntryView: View {
     @State private var showModal = false
+    
+    @State var selectedDate: Date?
 
     var body: some View {
         ZStack {
@@ -28,6 +30,22 @@ struct EntryView: View {
                 withAnimation {
                     showModal.toggle()
                 }
+            }
+            
+            NavigationStack {
+                CalendarView(selectedDate: $selectedDate)
+                    .frame(height: 500)
+                    .toolbar {
+                        ToolbarItem(placement: .navigationBarLeading) {
+                            Button(action: {
+                                withAnimation {
+                                    showModal.toggle()
+                                }
+                            }, label: {
+                                Image(systemName: "list.bullet")
+                            })
+                        }
+                    }
             }
             
             // 背景を半透明にしてモーダルをオーバーレイする
