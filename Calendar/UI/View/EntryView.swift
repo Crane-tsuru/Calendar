@@ -43,6 +43,9 @@ struct EntryView: View {
                                 }
                             }, label: {
                                 Image(systemName: "list.bullet")
+                                    .scaleEffect(1.8)
+                                    .padding(.leading, 20)
+                                    .padding(.top, 30)
                             })
                         }
                     }
