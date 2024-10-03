@@ -135,7 +135,6 @@
 			children = (
 				F3747D082CAECC8600A177BD /* Utils */,
 				F39D753F2CAD390F0080D20A /* Preview Content */,
-				F39D753D2CAD390F0080D20A /* Assets.xcassets */,
 				F3747D062CAECB3F00A177BD /* Models */,
 				F3747D052CAECB2400A177BD /* UI */,
 				F3747D042CAECAE200A177BD /* App */,
@@ -169,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				F39D75402CAD390F0080D20A /* Preview Assets.xcassets */,
+				F39D753D2CAD390F0080D20A /* Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -517,7 +517,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Calendar/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Preview Content\"";
 				DEVELOPMENT_TEAM = J37PZZ77T2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -546,7 +546,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Calendar/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Preview Content\"";
 				DEVELOPMENT_TEAM = J37PZZ77T2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
