@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F3863F912CAD5B9D00B41F49 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = F3863F902CAD5B9D00B41F49 /* FSCalendar */; };
+		F3913B122CAD8C4A0045F1A8 /* ScheduleGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3913B112CAD8C4A0045F1A8 /* ScheduleGrid.swift */; };
+		F3913B142CAD948A0045F1A8 /* OnedayScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3913B132CAD948A0045F1A8 /* OnedayScheduleView.swift */; };
 		F39D753A2CAD390E0080D20A /* CalendarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D75392CAD390E0080D20A /* CalendarApp.swift */; };
 		F39D753C2CAD390E0080D20A /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D753B2CAD390E0080D20A /* CalendarView.swift */; };
 		F39D753E2CAD390F0080D20A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F39D753D2CAD390F0080D20A /* Assets.xcassets */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F3913B112CAD8C4A0045F1A8 /* ScheduleGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleGrid.swift; sourceTree = "<group>"; };
+		F3913B132CAD948A0045F1A8 /* OnedayScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnedayScheduleView.swift; sourceTree = "<group>"; };
 		F39D75362CAD390E0080D20A /* Calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F39D75392CAD390E0080D20A /* CalendarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarApp.swift; sourceTree = "<group>"; };
 		F39D753B2CAD390E0080D20A /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 		F3913B0C2CAD8A950045F1A8 /* Schedule */ = {
 			isa = PBXGroup;
 			children = (
+				F3913B112CAD8C4A0045F1A8 /* ScheduleGrid.swift */,
+				F3913B132CAD948A0045F1A8 /* OnedayScheduleView.swift */,
 			);
 			path = Schedule;
 			sourceTree = "<group>";
@@ -303,10 +309,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3913B122CAD8C4A0045F1A8 /* ScheduleGrid.swift in Sources */,
 				F39D753C2CAD390E0080D20A /* CalendarView.swift in Sources */,
 				F39D753A2CAD390E0080D20A /* CalendarApp.swift in Sources */,
 				F39D756A2CAD40E30080D20A /* fscalendar.swift in Sources */,
 				F39D756D2CAD57520080D20A /* Date.swift in Sources */,
+				F3913B142CAD948A0045F1A8 /* OnedayScheduleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
