@@ -19,6 +19,8 @@
 		F39D75572CAD390F0080D20A /* CalendarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D75562CAD390F0080D20A /* CalendarUITestsLaunchTests.swift */; };
 		F39D756A2CAD40E30080D20A /* fscalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D75692CAD40E30080D20A /* fscalendar.swift */; };
 		F39D756D2CAD57520080D20A /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D756C2CAD57520080D20A /* Date.swift */; };
+		F3F097122CAEDE26007EA868 /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F097112CAEDE26007EA868 /* EntryView.swift */; };
+		F3F097142CAEDFFC007EA868 /* LeftSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F097132CAEDFFC007EA868 /* LeftSheetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		F39D75562CAD390F0080D20A /* CalendarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F39D75692CAD40E30080D20A /* fscalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fscalendar.swift; sourceTree = "<group>"; };
 		F39D756C2CAD57520080D20A /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		F3F097112CAEDE26007EA868 /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
+		F3F097132CAEDFFC007EA868 /* LeftSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSheetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,7 @@
 		F3747D052CAECB2400A177BD /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				F3F097102CAEDDFA007EA868 /* View */,
 				F39D75382CAD390E0080D20A /* Calendar */,
 				F3913B0C2CAD8A950045F1A8 /* Schedule */,
 			);
@@ -211,6 +216,15 @@
 				F39D756C2CAD57520080D20A /* Date.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		F3F097102CAEDDFA007EA868 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3F097112CAEDE26007EA868 /* EntryView.swift */,
+				F3F097132CAEDFFC007EA868 /* LeftSheetView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,6 +367,8 @@
 				F39D753C2CAD390E0080D20A /* CalendarView.swift in Sources */,
 				F39D753A2CAD390E0080D20A /* CalendarApp.swift in Sources */,
 				F39D756A2CAD40E30080D20A /* fscalendar.swift in Sources */,
+				F3F097122CAEDE26007EA868 /* EntryView.swift in Sources */,
+				F3F097142CAEDFFC007EA868 /* LeftSheetView.swift in Sources */,
 				F39D756D2CAD57520080D20A /* Date.swift in Sources */,
 				F3913B142CAD948A0045F1A8 /* OnedayScheduleView.swift in Sources */,
 			);
