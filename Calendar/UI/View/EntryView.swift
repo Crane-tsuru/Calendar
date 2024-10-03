@@ -22,7 +22,7 @@ import SwiftUI
 struct EntryView: View {
     @State private var showModal = false
     
-    @State var selectedDate: Date?
+    @State var selectedDate = Date()
     
     @State var viewSelector: ViewSelect = .calendar
 
