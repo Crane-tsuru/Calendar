@@ -22,6 +22,8 @@
 		F3F097122CAEDE26007EA868 /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F097112CAEDE26007EA868 /* EntryView.swift */; };
 		F3F097142CAEDFFC007EA868 /* LeftSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F097132CAEDFFC007EA868 /* LeftSheetView.swift */; };
 		F3F097162CAEE89F007EA868 /* ViewSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F097152CAEE89F007EA868 /* ViewSelect.swift */; };
+		F3F0971B2CAEEBC7007EA868 /* LeftSheetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F0971A2CAEEBC7007EA868 /* LeftSheetButton.swift */; };
+		F3F0971D2CAEEC17007EA868 /* SymbolName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F0971C2CAEEC17007EA868 /* SymbolName.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		F3F097112CAEDE26007EA868 /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
 		F3F097132CAEDFFC007EA868 /* LeftSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSheetView.swift; sourceTree = "<group>"; };
 		F3F097152CAEE89F007EA868 /* ViewSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSelect.swift; sourceTree = "<group>"; };
+		F3F0971A2CAEEBC7007EA868 /* LeftSheetButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSheetButton.swift; sourceTree = "<group>"; };
+		F3F0971C2CAEEC17007EA868 /* SymbolName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolName.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				F3F097152CAEE89F007EA868 /* ViewSelect.swift */,
+				F3F0971C2CAEEC17007EA868 /* SymbolName.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -226,8 +231,17 @@
 			children = (
 				F3F097112CAEDE26007EA868 /* EntryView.swift */,
 				F3F097132CAEDFFC007EA868 /* LeftSheetView.swift */,
+				F3F097172CAEEBA3007EA868 /* Components */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F3F097172CAEEBA3007EA868 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F3F0971A2CAEEBC7007EA868 /* LeftSheetButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,6 +380,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3F0971B2CAEEBC7007EA868 /* LeftSheetButton.swift in Sources */,
 				F3913B122CAD8C4A0045F1A8 /* ScheduleGrid.swift in Sources */,
 				F39D753C2CAD390E0080D20A /* CalendarView.swift in Sources */,
 				F3F097162CAEE89F007EA868 /* ViewSelect.swift in Sources */,
@@ -375,6 +390,7 @@
 				F3F097142CAEDFFC007EA868 /* LeftSheetView.swift in Sources */,
 				F39D756D2CAD57520080D20A /* Date.swift in Sources */,
 				F3913B142CAD948A0045F1A8 /* OnedayScheduleView.swift in Sources */,
+				F3F0971D2CAEEC17007EA868 /* SymbolName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
