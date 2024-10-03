@@ -27,9 +27,9 @@ struct LeftSheetView: View {
                 
                 Divider()
                 
-                LeftSheetButton(systemName: .calendar, viewSelector: $viewSelector, toggle: $isPresented, buttonTitle: "カレンダー")
+                LeftSheetButton(systemName: .calendar, viewSelector: $viewSelector, destination: .calendar, toggle: $isPresented, buttonTitle: "カレンダー")
                 
-                LeftSheetButton(systemName: .list_bullet, viewSelector: $viewSelector, toggle: $isPresented, buttonTitle: "1日")
+                LeftSheetButton(systemName: .list_bullet, viewSelector: $viewSelector, destination: .oneday, toggle: $isPresented, buttonTitle: "1日")
                 
                 
                 Spacer()

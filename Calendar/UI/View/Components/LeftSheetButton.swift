@@ -12,6 +12,7 @@ struct LeftSheetButton: View {
     
     @Binding var viewSelector: ViewSelect
     
+    let destination: ViewSelect
     
     @Binding var toggle: Bool
     
@@ -20,7 +21,7 @@ struct LeftSheetButton: View {
     var body: some View {
         HStack {
             Button(action: {
-                viewSelector = viewSelector
+                viewSelector = destination
                 toggle.toggle()
             }, label: {
                 Image(systemName: systemName.rawValue)
@@ -33,5 +34,5 @@ struct LeftSheetButton: View {
 }
 
 #Preview {
-    LeftSheetButton(systemName: .list_bullet, viewSelector: .constant(.oneday), toggle: .constant(true), buttonTitle: "1日")
+    LeftSheetButton(systemName: .list_bullet, viewSelector: .constant(.oneday), destination: .oneday, toggle: .constant(true), buttonTitle: "1日")
 }
