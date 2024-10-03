@@ -13,16 +13,28 @@ struct LeftSheetView: View {
 
     var body: some View {
         GeometryReader { geometry in
-            VStack {
+            VStack(alignment: .leading) {
                 HStack {
+                    Text("AI スケジューラ")
+                        .font(.largeTitle)
                     Spacer()
-                    Button("Close") {
-                        withAnimation {
-                            isPresented.toggle()
-                        }
-                    }
                 }
-                .padding()
+                .padding(.top, 60)
+                .padding(.leading)
+                
+                
+                Divider()
+                
+                HStack {
+                    Image(systemName: "calendar")
+                    Text("カレンダー")
+                }.padding()
+                
+                HStack {
+                    Image(systemName: "list.bullet")
+                    Text("1日")
+                }.padding()
+                
                 
                 Spacer()
             }
