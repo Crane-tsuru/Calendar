@@ -69,7 +69,7 @@ struct EntryView: View {
                         }
                     }
                 
-                LeftSheetView(isPresented: $showModal, viewSelector: $viewSelector)
+                LeftSheetView(isShowModal: $showModal, viewSelector: $viewSelector)
                     .transition(.move(edge: .leading)) // 左からスライドイン
                     .animation(.easeInOut)
             }

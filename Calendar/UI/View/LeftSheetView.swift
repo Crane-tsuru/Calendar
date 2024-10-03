@@ -9,7 +9,7 @@ import SwiftUI
 
 
 struct LeftSheetView: View {
-    @Binding var isPresented: Bool
+    @Binding var isShowModal: Bool
     
     @Binding var viewSelector: ViewSelect
 
@@ -27,9 +27,9 @@ struct LeftSheetView: View {
                 
                 Divider()
                 
-                LeftSheetButton(systemName: .calendar, viewSelector: $viewSelector, destination: .calendar, toggle: $isPresented, buttonTitle: "カレンダー")
+                LeftSheetButton(systemName: .calendar, viewSelector: $viewSelector, destination: .calendar, toggle: $isShowModal, buttonTitle: "カレンダー")
                 
-                LeftSheetButton(systemName: .list_bullet, viewSelector: $viewSelector, destination: .oneday, toggle: $isPresented, buttonTitle: "1日")
+                LeftSheetButton(systemName: .list_bullet, viewSelector: $viewSelector, destination: .oneday, toggle: $isShowModal, buttonTitle: "1日")
                 
                 
                 Spacer()
@@ -46,5 +46,5 @@ struct LeftSheetView: View {
 
 
 #Preview {
-    LeftSheetView(isPresented: .constant(true), viewSelector: .constant(.calendar))
+    LeftSheetView(isShowModal: .constant(true), viewSelector: .constant(.calendar))
 }
