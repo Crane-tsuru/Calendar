@@ -5,7 +5,7 @@
 //  Created by 鶴見駿 on 2024/10/04.
 //
 
-enum SymbolName: String {
+enum SystemName: String {
     case calendar = "calendar"
-    case oneday_task = "list.bullet"
+    case list_bullet = "list.bullet"
 }

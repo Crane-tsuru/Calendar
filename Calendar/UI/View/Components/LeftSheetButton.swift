@@ -8,15 +8,30 @@
 import SwiftUI
 
 struct LeftSheetButton: View {
-    let systemName: String
+    let systemName: SystemName
+    
+    @Binding var viewSelector: ViewSelect
+    
+    
+    @Binding var toggle: Bool
+    
+    let buttonTitle: String
     
     var body: some View {
         HStack {
-            
-        }
+            Button(action: {
+                viewSelector = viewSelector
+                toggle.toggle()
+            }, label: {
+                Image(systemName: systemName.rawValue)
+                Text(buttonTitle)
+            })
+            .foregroundColor(.black)
+        }.padding()
+
     }
 }
 
 #Preview {
-    LeftSheetButton()
+    LeftSheetButton(systemName: .list_bullet, viewSelector: .constant(.oneday), toggle: .constant(true), buttonTitle: "1日")
 }

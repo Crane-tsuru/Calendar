@@ -27,25 +27,9 @@ struct LeftSheetView: View {
                 
                 Divider()
                 
-                HStack {
-                    Button(action: {
-                        viewSelector = .calendar
-                    }, label: {
-                        Image(systemName: "calendar")
-                        Text("カレンダー")
-                    })
-                    .foregroundColor(.black)
-                }.padding()
+                LeftSheetButton(systemName: .calendar, viewSelector: $viewSelector, toggle: $isPresented, buttonTitle: "カレンダー")
                 
-                HStack {
-                    Button(action: {
-                        viewSelector = .oneday
-                    }, label: {
-                        Image(systemName: "list.bullet")
-                        Text("1日")
-                    })
-                    .foregroundColor(.black)
-                }.padding()
+                LeftSheetButton(systemName: .list_bullet, viewSelector: $viewSelector, toggle: $isPresented, buttonTitle: "1日")
                 
                 
                 Spacer()

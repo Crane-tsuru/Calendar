@@ -23,7 +23,7 @@
 		F3F097142CAEDFFC007EA868 /* LeftSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F097132CAEDFFC007EA868 /* LeftSheetView.swift */; };
 		F3F097162CAEE89F007EA868 /* ViewSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F097152CAEE89F007EA868 /* ViewSelect.swift */; };
 		F3F0971B2CAEEBC7007EA868 /* LeftSheetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F0971A2CAEEBC7007EA868 /* LeftSheetButton.swift */; };
-		F3F0971D2CAEEC17007EA868 /* SymbolName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F0971C2CAEEC17007EA868 /* SymbolName.swift */; };
+		F3F0971D2CAEEC17007EA868 /* SystemName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F0971C2CAEEC17007EA868 /* SystemName.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +62,7 @@
 		F3F097132CAEDFFC007EA868 /* LeftSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSheetView.swift; sourceTree = "<group>"; };
 		F3F097152CAEE89F007EA868 /* ViewSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSelect.swift; sourceTree = "<group>"; };
 		F3F0971A2CAEEBC7007EA868 /* LeftSheetButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSheetButton.swift; sourceTree = "<group>"; };
-		F3F0971C2CAEEC17007EA868 /* SymbolName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolName.swift; sourceTree = "<group>"; };
+		F3F0971C2CAEEC17007EA868 /* SystemName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemName.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				F3F097152CAEE89F007EA868 /* ViewSelect.swift */,
-				F3F0971C2CAEEC17007EA868 /* SymbolName.swift */,
+				F3F0971C2CAEEC17007EA868 /* SystemName.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -390,7 +390,7 @@
 				F3F097142CAEDFFC007EA868 /* LeftSheetView.swift in Sources */,
 				F39D756D2CAD57520080D20A /* Date.swift in Sources */,
 				F3913B142CAD948A0045F1A8 /* OnedayScheduleView.swift in Sources */,
-				F3F0971D2CAEEC17007EA868 /* SymbolName.swift in Sources */,
+				F3F0971D2CAEEC17007EA868 /* SystemName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
