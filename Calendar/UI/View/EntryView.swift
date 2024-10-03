@@ -24,7 +24,7 @@ struct EntryView: View {
     
     @State var selectedDate: Date?
     
-    @State var viewSelector = 0
+    @State var viewSelector: ViewSelect = .calendar
 
     var body: some View {
         ZStack {
@@ -36,9 +36,9 @@ struct EntryView: View {
             
             NavigationStack {
                 VStack {
-                    if viewSelector == 0 {
+                    if viewSelector == .calendar {
                         CalendarView(selectedDate: $selectedDate)
-                    } else if viewSelector == 1 {
+                    } else if viewSelector == .oneday {
                         OnedayScheduleView()
                     }
                 }
@@ -69,7 +69,7 @@ struct EntryView: View {
                         }
                     }
                 
-                LeftSheetView(isPresented: $showModal)
+                LeftSheetView(isPresented: $showModal, viewSelector: $viewSelector)
                     .transition(.move(edge: .leading)) // 左からスライドイン
                     .animation(.easeInOut)
             }

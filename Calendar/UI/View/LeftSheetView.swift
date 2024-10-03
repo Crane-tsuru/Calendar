@@ -10,6 +10,8 @@ import SwiftUI
 
 struct LeftSheetView: View {
     @Binding var isPresented: Bool
+    
+    @Binding var viewSelector: ViewSelect
 
     var body: some View {
         GeometryReader { geometry in
@@ -26,13 +28,23 @@ struct LeftSheetView: View {
                 Divider()
                 
                 HStack {
-                    Image(systemName: "calendar")
-                    Text("カレンダー")
+                    Button(action: {
+                        viewSelector = .calendar
+                    }, label: {
+                        Image(systemName: "calendar")
+                        Text("カレンダー")
+                    })
+                    .foregroundColor(.black)
                 }.padding()
                 
                 HStack {
-                    Image(systemName: "list.bullet")
-                    Text("1日")
+                    Button(action: {
+                        viewSelector = .oneday
+                    }, label: {
+                        Image(systemName: "list.bullet")
+                        Text("1日")
+                    })
+                    .foregroundColor(.black)
                 }.padding()
                 
                 
@@ -50,5 +62,5 @@ struct LeftSheetView: View {
 
 
 #Preview {
-    LeftSheetView(isPresented: .constant(true))
+    LeftSheetView(isPresented: .constant(true), viewSelector: .constant(.calendar))
 }
