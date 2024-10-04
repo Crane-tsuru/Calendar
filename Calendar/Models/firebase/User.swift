@@ -6,5 +6,6 @@
 //
 
 struct User {
-    var userid: String
+    var email: String
+    
 }
