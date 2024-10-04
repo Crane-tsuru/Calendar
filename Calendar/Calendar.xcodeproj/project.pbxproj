@@ -13,6 +13,7 @@
 		F321B66B2CB04403005C11EC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F321B66A2CB04403005C11EC /* GoogleService-Info.plist */; };
 		F321B66E2CB0447A005C11EC /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F321B66D2CB0447A005C11EC /* FirebaseAnalytics */; };
 		F321B6702CB0447A005C11EC /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F321B66F2CB0447A005C11EC /* FirebaseAuth */; };
+		F35ECADD2CB048A00067A1CF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F35ECADC2CB048A00067A1CF /* FirebaseFirestore */; };
 		F3863F912CAD5B9D00B41F49 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = F3863F902CAD5B9D00B41F49 /* FSCalendar */; };
 		F3913B122CAD8C4A0045F1A8 /* ScheduleGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3913B112CAD8C4A0045F1A8 /* ScheduleGrid.swift */; };
 		F3913B142CAD948A0045F1A8 /* OnedayScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3913B132CAD948A0045F1A8 /* OnedayScheduleView.swift */; };
@@ -81,6 +82,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F321B66E2CB0447A005C11EC /* FirebaseAnalytics in Frameworks */,
+				F35ECADD2CB048A00067A1CF /* FirebaseFirestore in Frameworks */,
 				F321B6702CB0447A005C11EC /* FirebaseAuth in Frameworks */,
 				F3863F912CAD5B9D00B41F49 /* FSCalendar in Frameworks */,
 			);
@@ -288,6 +290,7 @@
 				F3863F902CAD5B9D00B41F49 /* FSCalendar */,
 				F321B66D2CB0447A005C11EC /* FirebaseAnalytics */,
 				F321B66F2CB0447A005C11EC /* FirebaseAuth */,
+				F35ECADC2CB048A00067A1CF /* FirebaseFirestore */,
 			);
 			productName = Calendar;
 			productReference = F39D75362CAD390E0080D20A /* Calendar.app */;
@@ -781,6 +784,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F321B66C2CB0447A005C11EC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
+		};
+		F35ECADC2CB048A00067A1CF /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F321B66C2CB0447A005C11EC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
 		};
 		F3863F902CAD5B9D00B41F49 /* FSCalendar */ = {
 			isa = XCSwiftPackageProductDependency;
