@@ -6,10 +6,14 @@
 //
 
 import FirebaseFirestore
+import Foundation
 
 class TaskViewModel: ObservableObject {
     @Published var tasks: [Task] = []
     private let db = Firestore.firestore()
+    
+    private let collectionName: String = CollectionName.collectionName.rawValue
+    private let subCollectionName: String = CollectionName.subCollectionName.rawValue
     
     func fetchTasks(userid: String) {
         db.collection("users").document(userid).collection("tasks").getDocuments { snapshot, error in
@@ -28,7 +32,13 @@ class TaskViewModel: ObservableObject {
         }
     }
     
-    func saveTask(task_id: String) {
-        db.collection(
+    func saveTask(userid: String, task: Task) {
+        let docRef = db.collection(collectionName).document(userid).collection(subCollectionName).document(task.id)
+        
+        do {
+            try docRef.setData(from: task)
+        } catch {
+            print("Failed Saving Task Data: \(error)")
+        }
     }
 }
