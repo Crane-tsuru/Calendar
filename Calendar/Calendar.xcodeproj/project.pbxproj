@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F3863F912CAD5B9D00B41F49 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = F3863F902CAD5B9D00B41F49 /* FSCalendar */; };
+		F30718B52CB3F8F0002E9816 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = F30718B42CB3F8F0002E9816 /* FSCalendar */; };
+		F309205C2CD0D07800729A96 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F309205B2CD0D07800729A96 /* UserViewModel.swift */; };
+		F30920602CD0F47100729A96 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F309205F2CD0F47100729A96 /* Decoder.swift */; };
+		F30920632CD1056200729A96 /* CollectionName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30920622CD1056200729A96 /* CollectionName.swift */; };
+		F321B6632CAFF81B005C11EC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F321B6622CAFF81B005C11EC /* User.swift */; };
+		F321B6652CAFF944005C11EC /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = F321B6642CAFF944005C11EC /* Task.swift */; };
+		F321B6672CB04279005C11EC /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F321B6662CB04278005C11EC /* TaskViewModel.swift */; };
+		F321B66B2CB04403005C11EC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F321B66A2CB04403005C11EC /* GoogleService-Info.plist */; };
 		F3913B122CAD8C4A0045F1A8 /* ScheduleGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3913B112CAD8C4A0045F1A8 /* ScheduleGrid.swift */; };
 		F3913B142CAD948A0045F1A8 /* OnedayScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3913B132CAD948A0045F1A8 /* OnedayScheduleView.swift */; };
 		F39D753A2CAD390E0080D20A /* CalendarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D75392CAD390E0080D20A /* CalendarApp.swift */; };
@@ -19,6 +26,8 @@
 		F39D75572CAD390F0080D20A /* CalendarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D75562CAD390F0080D20A /* CalendarUITestsLaunchTests.swift */; };
 		F39D756A2CAD40E30080D20A /* fscalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D75692CAD40E30080D20A /* fscalendar.swift */; };
 		F39D756D2CAD57520080D20A /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D756C2CAD57520080D20A /* Date.swift */; };
+		F3AC502B2CB3F9D10057A9A6 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F3AC502A2CB3F9D10057A9A6 /* FirebaseAnalytics */; };
+		F3AC502D2CB3F9DA0057A9A6 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F3AC502C2CB3F9DA0057A9A6 /* FirebaseFirestore */; };
 		F3F097122CAEDE26007EA868 /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F097112CAEDE26007EA868 /* EntryView.swift */; };
 		F3F097142CAEDFFC007EA868 /* LeftSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F097132CAEDFFC007EA868 /* LeftSheetView.swift */; };
 		F3F097162CAEE89F007EA868 /* ViewSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F097152CAEE89F007EA868 /* ViewSelect.swift */; };
@@ -44,6 +53,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F309205B2CD0D07800729A96 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		F309205F2CD0F47100729A96 /* Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
+		F30920622CD1056200729A96 /* CollectionName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionName.swift; sourceTree = "<group>"; };
+		F321B6622CAFF81B005C11EC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F321B6642CAFF944005C11EC /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		F321B6662CB04278005C11EC /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		F321B66A2CB04403005C11EC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F3913B112CAD8C4A0045F1A8 /* ScheduleGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleGrid.swift; sourceTree = "<group>"; };
 		F3913B132CAD948A0045F1A8 /* OnedayScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnedayScheduleView.swift; sourceTree = "<group>"; };
 		F39D75362CAD390E0080D20A /* Calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,7 +86,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3863F912CAD5B9D00B41F49 /* FSCalendar in Frameworks */,
+				F3AC502B2CB3F9D10057A9A6 /* FirebaseAnalytics in Frameworks */,
+				F30718B52CB3F8F0002E9816 /* FSCalendar in Frameworks */,
+				F3AC502D2CB3F9DA0057A9A6 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +109,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F30920592CD0D03B00729A96 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F321B6642CAFF944005C11EC /* Task.swift */,
+				F321B6622CAFF81B005C11EC /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F309205A2CD0D05000729A96 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F321B6662CB04278005C11EC /* TaskViewModel.swift */,
+				F309205B2CD0D07800729A96 /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F309205E2CD0F45300729A96 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				F309205F2CD0F47100729A96 /* Decoder.swift */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		F321B65F2CAFF768005C11EC /* firebase */ = {
+			isa = PBXGroup;
+			children = (
+				F309205A2CD0D05000729A96 /* ViewModel */,
+				F30920592CD0D03B00729A96 /* Models */,
+			);
+			path = firebase;
+			sourceTree = "<group>";
+		};
 		F3747D042CAECAE200A177BD /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +167,8 @@
 			children = (
 				F3F097152CAEE89F007EA868 /* ViewSelect.swift */,
 				F3F0971C2CAEEC17007EA868 /* SystemName.swift */,
+				F30920622CD1056200729A96 /* CollectionName.swift */,
+				F321B65F2CAFF768005C11EC /* firebase */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -146,6 +201,7 @@
 		F39D752D2CAD390E0080D20A = {
 			isa = PBXGroup;
 			children = (
+				F321B66A2CB04403005C11EC /* GoogleService-Info.plist */,
 				F3747D082CAECC8600A177BD /* Utils */,
 				F39D753F2CAD390F0080D20A /* Preview Content */,
 				F3747D062CAECB3F00A177BD /* Models */,
@@ -221,6 +277,7 @@
 		F39D756B2CAD57420080D20A /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				F309205E2CD0F45300729A96 /* JSON */,
 				F39D756C2CAD57520080D20A /* Date.swift */,
 			);
 			path = Extension;
@@ -261,7 +318,9 @@
 			);
 			name = Calendar;
 			packageProductDependencies = (
-				F3863F902CAD5B9D00B41F49 /* FSCalendar */,
+				F30718B42CB3F8F0002E9816 /* FSCalendar */,
+				F3AC502A2CB3F9D10057A9A6 /* FirebaseAnalytics */,
+				F3AC502C2CB3F9DA0057A9A6 /* FirebaseFirestore */,
 			);
 			productName = Calendar;
 			productReference = F39D75362CAD390E0080D20A /* Calendar.app */;
@@ -336,7 +395,8 @@
 			);
 			mainGroup = F39D752D2CAD390E0080D20A;
 			packageReferences = (
-				F3863F8F2CAD5B9D00B41F49 /* XCRemoteSwiftPackageReference "FSCalendar" */,
+				F321B66C2CB0447A005C11EC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				F30718B32CB3F8F0002E9816 /* XCRemoteSwiftPackageReference "FSCalendar" */,
 			);
 			productRefGroup = F39D75372CAD390E0080D20A /* Products */;
 			projectDirPath = "";
@@ -356,6 +416,7 @@
 			files = (
 				F39D75412CAD390F0080D20A /* Preview Assets.xcassets in Resources */,
 				F39D753E2CAD390F0080D20A /* Assets.xcassets in Resources */,
+				F321B66B2CB04403005C11EC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +441,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F321B6632CAFF81B005C11EC /* User.swift in Sources */,
+				F321B6672CB04279005C11EC /* TaskViewModel.swift in Sources */,
 				F3F0971B2CAEEBC7007EA868 /* LeftSheetButton.swift in Sources */,
 				F3913B122CAD8C4A0045F1A8 /* ScheduleGrid.swift in Sources */,
 				F39D753C2CAD390E0080D20A /* CalendarView.swift in Sources */,
@@ -390,6 +453,10 @@
 				F3F097142CAEDFFC007EA868 /* LeftSheetView.swift in Sources */,
 				F39D756D2CAD57520080D20A /* Date.swift in Sources */,
 				F3913B142CAD948A0045F1A8 /* OnedayScheduleView.swift in Sources */,
+				F30920602CD0F47100729A96 /* Decoder.swift in Sources */,
+				F321B6652CAFF944005C11EC /* Task.swift in Sources */,
+				F309205C2CD0D07800729A96 /* UserViewModel.swift in Sources */,
+				F30920632CD1056200729A96 /* CollectionName.swift in Sources */,
 				F3F0971D2CAEEC17007EA868 /* SystemName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -722,7 +789,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F3863F8F2CAD5B9D00B41F49 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+		F30718B32CB3F8F0002E9816 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/WenchaoD/FSCalendar";
 			requirement = {
@@ -730,13 +797,31 @@
 				minimumVersion = 2.8.4;
 			};
 		};
+		F321B66C2CB0447A005C11EC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.3.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F3863F902CAD5B9D00B41F49 /* FSCalendar */ = {
+		F30718B42CB3F8F0002E9816 /* FSCalendar */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F3863F8F2CAD5B9D00B41F49 /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			package = F30718B32CB3F8F0002E9816 /* XCRemoteSwiftPackageReference "FSCalendar" */;
 			productName = FSCalendar;
+		};
+		F3AC502A2CB3F9D10057A9A6 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F321B66C2CB0447A005C11EC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		F3AC502C2CB3F9DA0057A9A6 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F321B66C2CB0447A005C11EC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
