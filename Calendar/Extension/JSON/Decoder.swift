@@ -5,10 +5,14 @@
 //  Created by 鶴見駿 on 2024/10/29.
 //
 
+// API通信用
+
 import Foundation
 
-class Decoder {
-    private let decoder = JSONDecoder()
+extension Decoder {
+    private var decoder: JSONDecoder {
+        JSONDecoder()
+    }
     
     public func getDecoder() -> JSONDecoder {
         return decoder

@@ -163,7 +163,6 @@
 		F3747D062CAECB3F00A177BD /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F309205E2CD0F45300729A96 /* JSON */,
 				F3F097152CAEE89F007EA868 /* ViewSelect.swift */,
 				F3F0971C2CAEEC17007EA868 /* SystemName.swift */,
 				F321B65F2CAFF768005C11EC /* firebase */,
@@ -275,6 +274,7 @@
 		F39D756B2CAD57420080D20A /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				F309205E2CD0F45300729A96 /* JSON */,
 				F39D756C2CAD57520080D20A /* Date.swift */,
 			);
 			path = Extension;
