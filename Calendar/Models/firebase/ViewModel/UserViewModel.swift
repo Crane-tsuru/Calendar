@@ -11,6 +11,8 @@ class UserViewModel: ObservableObject {
     private let db = Firestore.firestore()
     private let collectionName = "users"
     
+    private let decoder: Decoder = Decoder()
+    
     @Published var user: User?
     
     func fetchUser(userid: String) {
@@ -26,10 +28,11 @@ class UserViewModel: ObservableObject {
                 return
             }
             
-            let email = data["email"] as? String ?? ""
-            let userid = data["user_name"] as? String ?? ""
-            let password = data["password"] as? String ?? ""
-            self.user = User(email: email, id: userid, password: password)
+            do {
+                self.user = try document.data(as: User.self)
+            } catch {
+                print("Convert Error for User: \(error)")
+            }
 
         }
     }
