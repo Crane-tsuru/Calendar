@@ -36,7 +36,14 @@ class UserViewModel: ObservableObject {
         }
     }
     
-    func saveUser(email: String, user_name: String, password: String) {
-        let docRef = db.collection(collectionName).document(email)
+    // mailをdocumentidにする
+    func saveUser(user: User) {
+        let docRef = db.collection(collectionName).document(user.email)
+        
+        do {
+            try docRef.setData(from: user)
+        } catch {
+            print(error)
+        }
     }
 }

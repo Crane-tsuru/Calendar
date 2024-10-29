@@ -21,4 +21,11 @@ struct User: Codable {
         self.userName = id
         self.password = password
     }
+    
+    init(from decoder: any Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.email = try container.decode(String.self, forKey: .email)
+        self.userName = try container.decode(String.self, forKey: .userName)
+        self.password = try container.decode(String.self, forKey: .password)
+    }
 }
