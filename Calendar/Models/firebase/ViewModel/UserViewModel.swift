@@ -9,7 +9,7 @@ import FirebaseFirestore
 
 class UserViewModel: ObservableObject {
     private let db = Firestore.firestore()
-    private let collectionName = "users"
+    private let collectionName: String = CollectionName.collectionName.rawValue
     
     
     @Published var user: User?
@@ -38,6 +38,5 @@ class UserViewModel: ObservableObject {
     
     func saveUser(email: String, user_name: String, password: String) {
         let docRef = db.collection(collectionName).document(email)
-        
     }
 }
