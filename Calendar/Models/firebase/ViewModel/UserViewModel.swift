@@ -28,7 +28,8 @@ class UserViewModel: ObservableObject {
             
             let email = data["email"] as? String ?? ""
             let userid = data["id"] as? String ?? ""
-            self.user = User(email: email, id: userid)
+            let password = data["password"] as? String ?? ""
+            self.user = User(email: email, id: userid, password: password)
 
         }
     }
