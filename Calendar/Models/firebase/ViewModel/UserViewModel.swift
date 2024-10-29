@@ -11,7 +11,6 @@ class UserViewModel: ObservableObject {
     private let db = Firestore.firestore()
     private let collectionName = "users"
     
-    private let decoder: Decoder = Decoder()
     
     @Published var user: User?
     
