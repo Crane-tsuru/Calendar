@@ -27,10 +27,15 @@ class UserViewModel: ObservableObject {
             }
             
             let email = data["email"] as? String ?? ""
-            let userid = data["id"] as? String ?? ""
+            let userid = data["user_name"] as? String ?? ""
             let password = data["password"] as? String ?? ""
             self.user = User(email: email, id: userid, password: password)
 
         }
+    }
+    
+    func saveUser(email: String, user_name: String, password: String) {
+        let docRef = db.collection(collectionName).document(email)
+        
     }
 }

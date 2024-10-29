@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F30718B52CB3F8F0002E9816 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = F30718B42CB3F8F0002E9816 /* FSCalendar */; };
 		F309205C2CD0D07800729A96 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F309205B2CD0D07800729A96 /* UserViewModel.swift */; };
+		F30920602CD0F47100729A96 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F309205F2CD0F47100729A96 /* Decoder.swift */; };
 		F321B6632CAFF81B005C11EC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F321B6622CAFF81B005C11EC /* User.swift */; };
 		F321B6652CAFF944005C11EC /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = F321B6642CAFF944005C11EC /* Task.swift */; };
 		F321B6672CB04279005C11EC /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F321B6662CB04278005C11EC /* TaskViewModel.swift */; };
@@ -52,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		F309205B2CD0D07800729A96 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		F309205F2CD0F47100729A96 /* Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
 		F321B6622CAFF81B005C11EC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F321B6642CAFF944005C11EC /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		F321B6662CB04278005C11EC /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
@@ -123,6 +125,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		F309205E2CD0F45300729A96 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				F309205F2CD0F47100729A96 /* Decoder.swift */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
 		F321B65F2CAFF768005C11EC /* firebase */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +163,7 @@
 		F3747D062CAECB3F00A177BD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F309205E2CD0F45300729A96 /* JSON */,
 				F3F097152CAEE89F007EA868 /* ViewSelect.swift */,
 				F3F0971C2CAEEC17007EA868 /* SystemName.swift */,
 				F321B65F2CAFF768005C11EC /* firebase */,
@@ -439,6 +450,7 @@
 				F3F097142CAEDFFC007EA868 /* LeftSheetView.swift in Sources */,
 				F39D756D2CAD57520080D20A /* Date.swift in Sources */,
 				F3913B142CAD948A0045F1A8 /* OnedayScheduleView.swift in Sources */,
+				F30920602CD0F47100729A96 /* Decoder.swift in Sources */,
 				F321B6652CAFF944005C11EC /* Task.swift in Sources */,
 				F309205C2CD0D07800729A96 /* UserViewModel.swift in Sources */,
 				F3F0971D2CAEEC17007EA868 /* SystemName.swift in Sources */,
