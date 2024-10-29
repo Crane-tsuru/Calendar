@@ -10,9 +10,9 @@ import FirebaseFirestore
 
 class TaskViewModel: ObservableObject {
     @Published var tasks: [Task] = []
+    private let db = Firestore.firestore()
     
     func fetchTasks(userid: String) {
-        let db = Firestore.firestore()
         db.collection("users").document(userid).collection("tasks").getDocuments { snapshot, error in
             if let error = error {
                 print(error)
