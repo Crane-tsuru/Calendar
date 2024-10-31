@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+
+		9F5261712CB3B4E200B6CFCE /* AkatukiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5261702CB3B4E200B6CFCE /* AkatukiView.swift */; };
 		F30718B52CB3F8F0002E9816 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = F30718B42CB3F8F0002E9816 /* FSCalendar */; };
 		F309205C2CD0D07800729A96 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F309205B2CD0D07800729A96 /* UserViewModel.swift */; };
 		F30920602CD0F47100729A96 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F309205F2CD0F47100729A96 /* Decoder.swift */; };
@@ -53,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F5261702CB3B4E200B6CFCE /* AkatukiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkatukiView.swift; sourceTree = "<group>"; };
 		F309205B2CD0D07800729A96 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		F309205F2CD0F47100729A96 /* Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
 		F30920622CD1056200729A96 /* CollectionName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionName.swift; sourceTree = "<group>"; };
@@ -289,6 +292,7 @@
 				F3F097112CAEDE26007EA868 /* EntryView.swift */,
 				F3F097132CAEDFFC007EA868 /* LeftSheetView.swift */,
 				F3F097172CAEEBA3007EA868 /* Components */,
+				9F5261702CB3B4E200B6CFCE /* AkatukiView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -444,6 +448,7 @@
 				F321B6632CAFF81B005C11EC /* User.swift in Sources */,
 				F321B6672CB04279005C11EC /* TaskViewModel.swift in Sources */,
 				F3F0971B2CAEEBC7007EA868 /* LeftSheetButton.swift in Sources */,
+				9F5261712CB3B4E200B6CFCE /* AkatukiView.swift in Sources */,
 				F3913B122CAD8C4A0045F1A8 /* ScheduleGrid.swift in Sources */,
 				F39D753C2CAD390E0080D20A /* CalendarView.swift in Sources */,
 				F3F097162CAEE89F007EA868 /* ViewSelect.swift in Sources */,
@@ -621,7 +626,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Preview Content\"";
-				DEVELOPMENT_TEAM = J37PZZ77T2;
+				DEVELOPMENT_TEAM = LWS7D7QDFF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -650,7 +655,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Preview Content\"";
-				DEVELOPMENT_TEAM = J37PZZ77T2;
+				DEVELOPMENT_TEAM = LWS7D7QDFF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
