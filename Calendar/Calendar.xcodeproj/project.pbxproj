@@ -74,6 +74,7 @@
 		F39D75562CAD390F0080D20A /* CalendarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F39D75692CAD40E30080D20A /* fscalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fscalendar.swift; sourceTree = "<group>"; };
 		F39D756C2CAD57520080D20A /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		F3D7AF112CD3709D00D4184A /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		F3F097112CAEDE26007EA868 /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
 		F3F097132CAEDFFC007EA868 /* LeftSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSheetView.swift; sourceTree = "<group>"; };
 		F3F097152CAEE89F007EA868 /* ViewSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSelect.swift; sourceTree = "<group>"; };
@@ -202,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				F321B66A2CB04403005C11EC /* GoogleService-Info.plist */,
+				F3D7AF112CD3709D00D4184A /* Config.xcconfig */,
 				F3747D082CAECC8600A177BD /* Utils */,
 				F39D753F2CAD390F0080D20A /* Preview Content */,
 				F3747D062CAECB3F00A177BD /* Models */,
@@ -615,6 +617,7 @@
 		};
 		F39D755B2CAD390F0080D20A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3D7AF112CD3709D00D4184A /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -644,6 +647,7 @@
 		};
 		F39D755C2CAD390F0080D20A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3D7AF112CD3709D00D4184A /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -673,6 +677,7 @@
 		};
 		F39D755E2CAD390F0080D20A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3D7AF112CD3709D00D4184A /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -693,6 +698,7 @@
 		};
 		F39D755F2CAD390F0080D20A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3D7AF112CD3709D00D4184A /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -713,6 +719,7 @@
 		};
 		F39D75612CAD390F0080D20A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3D7AF112CD3709D00D4184A /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -731,6 +738,7 @@
 		};
 		F39D75622CAD390F0080D20A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3D7AF112CD3709D00D4184A /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
