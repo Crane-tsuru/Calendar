@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-
 		9F5261712CB3B4E200B6CFCE /* AkatukiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5261702CB3B4E200B6CFCE /* AkatukiView.swift */; };
 		F30718B52CB3F8F0002E9816 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = F30718B42CB3F8F0002E9816 /* FSCalendar */; };
 		F309205C2CD0D07800729A96 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F309205B2CD0D07800729A96 /* UserViewModel.swift */; };
@@ -82,6 +81,8 @@
 		F3F097152CAEE89F007EA868 /* ViewSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSelect.swift; sourceTree = "<group>"; };
 		F3F0971A2CAEEBC7007EA868 /* LeftSheetButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSheetButton.swift; sourceTree = "<group>"; };
 		F3F0971C2CAEEC17007EA868 /* SystemName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemName.swift; sourceTree = "<group>"; };
+		F3F95F242CD71181000F90F2 /* Calendar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Calendar-Info.plist"; sourceTree = "<group>"; };
+		F3F95F252CD713B3000F90F2 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +205,8 @@
 		F39D752D2CAD390E0080D20A = {
 			isa = PBXGroup;
 			children = (
+				F3F95F252CD713B3000F90F2 /* Config.xcconfig */,
+				F3F95F242CD71181000F90F2 /* Calendar-Info.plist */,
 				F321B66A2CB04403005C11EC /* GoogleService-Info.plist */,
 				F3747D082CAECC8600A177BD /* Utils */,
 				F39D753F2CAD390F0080D20A /* Preview Content */,
@@ -501,6 +504,7 @@
 /* Begin XCBuildConfiguration section */
 		F39D75582CAD390F0080D20A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3F95F252CD713B3000F90F2 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -564,6 +568,7 @@
 		};
 		F39D75592CAD390F0080D20A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3F95F252CD713B3000F90F2 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -629,6 +634,7 @@
 				DEVELOPMENT_TEAM = LWS7D7QDFF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Calendar-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -658,6 +664,7 @@
 				DEVELOPMENT_TEAM = LWS7D7QDFF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Calendar-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
