@@ -10,7 +10,7 @@ import Foundation
 class GPTManager {
     private let endpoint = "https://api.openai.com/v1/chat/completions"
     
-    func getAPIKey() -> String? {
+    private func getAPIKey() -> String? {
         guard let key = Bundle.main.infoDictionary?["GPTKEY"] as? String else {
             return nil
         }
@@ -28,6 +28,7 @@ class GPTManager {
         request.setValue("Bearer \(String(describing: apiKey))", forHTTPHeaderField: "Authorization")
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
+        let requestBody = RequestBody(model: model, message: [Message(role: "user", content: prompt)], max_tokens: maxTokens)
         
         do {
             
