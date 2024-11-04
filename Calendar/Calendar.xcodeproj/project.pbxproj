@@ -18,6 +18,7 @@
 		F321B66B2CB04403005C11EC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F321B66A2CB04403005C11EC /* GoogleService-Info.plist */; };
 		F36952112CD8E70600A788AE /* RequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36952102CD8E70600A788AE /* RequestBody.swift */; };
 		F36952132CD8E7B500A788AE /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36952122CD8E7B500A788AE /* Message.swift */; };
+		F36952152CD8EAEF00A788AE /* ResponseBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36952142CD8EAEF00A788AE /* ResponseBody.swift */; };
 		F3913B122CAD8C4A0045F1A8 /* ScheduleGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3913B112CAD8C4A0045F1A8 /* ScheduleGrid.swift */; };
 		F3913B142CAD948A0045F1A8 /* OnedayScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3913B132CAD948A0045F1A8 /* OnedayScheduleView.swift */; };
 		F39D753A2CAD390E0080D20A /* CalendarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D75392CAD390E0080D20A /* CalendarApp.swift */; };
@@ -67,6 +68,7 @@
 		F321B66A2CB04403005C11EC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F36952102CD8E70600A788AE /* RequestBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBody.swift; sourceTree = "<group>"; };
 		F36952122CD8E7B500A788AE /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		F36952142CD8EAEF00A788AE /* ResponseBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseBody.swift; sourceTree = "<group>"; };
 		F3913B112CAD8C4A0045F1A8 /* ScheduleGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleGrid.swift; sourceTree = "<group>"; };
 		F3913B132CAD948A0045F1A8 /* OnedayScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnedayScheduleView.swift; sourceTree = "<group>"; };
 		F39D75362CAD390E0080D20A /* Calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,6 +162,7 @@
 				F3F95F262CD75E8C000F90F2 /* GPTManager.swift */,
 				F36952102CD8E70600A788AE /* RequestBody.swift */,
 				F36952122CD8E7B500A788AE /* Message.swift */,
+				F36952142CD8EAEF00A788AE /* ResponseBody.swift */,
 			);
 			path = GPT;
 			sourceTree = "<group>";
@@ -475,6 +478,7 @@
 				F39D753C2CAD390E0080D20A /* CalendarView.swift in Sources */,
 				F3F097162CAEE89F007EA868 /* ViewSelect.swift in Sources */,
 				F39D753A2CAD390E0080D20A /* CalendarApp.swift in Sources */,
+				F36952152CD8EAEF00A788AE /* ResponseBody.swift in Sources */,
 				F39D756A2CAD40E30080D20A /* fscalendar.swift in Sources */,
 				F3F097122CAEDE26007EA868 /* EntryView.swift in Sources */,
 				F3F097142CAEDFFC007EA868 /* LeftSheetView.swift in Sources */,
