@@ -18,10 +18,11 @@ class GPTManager {
         return key
     }
     
-    func fetchGPTResponse(prompt: String, model: String = "gpt-3.5-turbo", maxTokens: Int = 100) {
-        guard let url = URL(string: self.endpoint) else { return }
+    @MainActor
+    func fetchGPTResponse(prompt: String, model: String = "gpt-3.5-turbo", maxTokens: Int = 100) -> String? {
+        guard let url = URL(string: self.endpoint) else { return nil }
         let apiKey = getAPIKey()
-        
+        var content: String?
         
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
@@ -31,7 +32,35 @@ class GPTManager {
         let requestBody = RequestBody(model: model, message: [Message(role: "user", content: prompt)], max_tokens: maxTokens)
         
         do {
-            
+            let jsonData = try JSONEncoder().encode(requestBody)
+            request.httpBody = jsonData
+        } catch {
+            print("Encoding Error: \(error)")
+            return nil
         }
+        
+        let task: Void = URLSession.shared.dataTask(with: request) { data, response, error in
+            if let error = error {
+                print("Request Error: \(error)")
+                return
+            }
+            
+            guard let data = data else {
+                print("No data catched")
+                return
+            }
+            
+            do {
+                let response = try JSONDecoder().decode(ResponseBody.self, from: data)
+                if let message = response.choices.first?.message.content {
+                    print("GPT Response:", message)
+                    content = message
+                }
+            } catch {
+                print("No response message found")
+            }
+        }.resume()
+        
+        return content ?? nil
     }
 }
