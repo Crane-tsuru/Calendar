@@ -8,6 +8,7 @@
 import Foundation
 
 class GPTManager {
+    private let endpoint = "https://api.openai.com/v1/chat/completions"
     
     func getAPIKey() -> String? {
         guard let key = Bundle.main.infoDictionary?["GPTKEY"] as? String else {
@@ -15,5 +16,10 @@ class GPTManager {
         }
         
         return key
+    }
+    
+    func fetchGPTResponse(prompt: String) {
+        let url = URL(string: self.endpoint)
+        
     }
 }
