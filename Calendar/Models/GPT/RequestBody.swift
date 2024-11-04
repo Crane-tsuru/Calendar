@@ -7,4 +7,8 @@
 
 import Foundation
 
-struct RequestBody: 
+struct RequestBody: Codable {
+    let model: String
+    let message: [Message]
+    let max_tokens: Int
+}
