@@ -8,7 +8,6 @@
 import Foundation
 
 class GPTManager {
-    @Published var content: String = ""
     private let endpoint = "https://api.openai.com/v1/chat/completions"
     
     private func getAPIKey() -> String? {
@@ -21,6 +20,8 @@ class GPTManager {
     
     @MainActor
     func fetchGPTResponse(prompt: String, model: String = "gpt-3.5-turbo", maxTokens: Int = 100) -> String? {
+        var myContent: String?
+        
         guard let url = URL(string: self.endpoint) else { return nil }
         let apiKey = getAPIKey()
         
@@ -30,6 +31,8 @@ class GPTManager {
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
         let requestBody = RequestBody(model: model, message: [Message(role: "user", content: prompt)], max_tokens: maxTokens)
+        request.httpBody = try? JSONSerialization.data(withJSONObject: requestBody)
+        
         
         do {
             let jsonData = try JSONEncoder().encode(requestBody)
@@ -50,18 +53,17 @@ class GPTManager {
                 return
             }
             
-            do {
-                let response = try JSONDecoder().decode(ResponseBody.self, from: data)
-                if let message = response.choices.first?.message.content {
-                    print("GPT Response:", message)
-                    self.content = message
+            if let jsonResponse = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
+                
+                if let choices = jsonResponse["choices"] as? [[String: Any]],
+                   let message = choices.first?["message"] as? [String: Any],
+                   let content = message["content"] as? String {
+                    myContent = content
                 }
-            } catch {
-                print("No response message found")
             }
         }.resume()
         
         // contentが空の場合にnilを返す
-        return content.isEmpty ? nil : content
+        return myContent
     }
 }
