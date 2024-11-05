@@ -8,6 +8,7 @@
 import Foundation
 
 class GPTManager {
+    @Published var content: String = ""
     private let endpoint = "https://api.openai.com/v1/chat/completions"
     
     private func getAPIKey() -> String? {
@@ -22,7 +23,6 @@ class GPTManager {
     func fetchGPTResponse(prompt: String, model: String = "gpt-3.5-turbo", maxTokens: Int = 100) -> String? {
         guard let url = URL(string: self.endpoint) else { return nil }
         let apiKey = getAPIKey()
-        var content: String?
         
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
@@ -39,7 +39,7 @@ class GPTManager {
             return nil
         }
         
-        let task: Void = URLSession.shared.dataTask(with: request) { data, response, error in
+        URLSession.shared.dataTask(with: request) { data, response, error in
             if let error = error {
                 print("Request Error: \(error)")
                 return
@@ -54,13 +54,14 @@ class GPTManager {
                 let response = try JSONDecoder().decode(ResponseBody.self, from: data)
                 if let message = response.choices.first?.message.content {
                     print("GPT Response:", message)
-                    content = message
+                    self.content = message
                 }
             } catch {
                 print("No response message found")
             }
         }.resume()
         
-        return content ?? nil
+        // contentが空の場合にnilを返す
+        return content.isEmpty ? nil : content
     }
 }
