@@ -9,6 +9,6 @@ import Foundation
 
 struct RequestBody: Codable {
     let model: String
-    let message: [Message]
+    let messages: [Message]
     let max_tokens: Int
 }

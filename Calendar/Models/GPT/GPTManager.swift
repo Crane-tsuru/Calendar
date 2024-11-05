@@ -19,7 +19,7 @@ class GPTManager {
     }
     
     @MainActor
-    func fetchGPTResponse(prompt: String, model: String = "gpt-3.5-turbo", maxTokens: Int = 100) -> String? {
+    func fetchGPTResponse(prompt: String, model: String = "gpt-4o-mini", maxTokens: Int = 100) -> String? {
         var myContent: String?
         
         guard let url = URL(string: self.endpoint) else { return nil }
@@ -30,7 +30,7 @@ class GPTManager {
         request.setValue("Bearer \(String(describing: apiKey))", forHTTPHeaderField: "Authorization")
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
-        let requestBody = RequestBody(model: model, message: [Message(role: "user", content: prompt)], max_tokens: maxTokens)
+        let requestBody = RequestBody(model: model, messages: [Message(role: "user", content: prompt)], max_tokens: maxTokens)
         request.httpBody = try? JSONSerialization.data(withJSONObject: requestBody)
         
         
@@ -63,7 +63,6 @@ class GPTManager {
             }
         }.resume()
         
-        // contentが空の場合にnilを返す
         return myContent
     }
 }
