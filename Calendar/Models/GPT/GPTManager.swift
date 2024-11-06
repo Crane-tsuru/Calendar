@@ -20,7 +20,6 @@ class GPTManager {
     
     @MainActor
     func fetchGPTResponse(prompt: String, model: String = "gpt-4o-mini", maxTokens: Int = 100) -> String? {
-        var myContent: String?
         
         guard let url = URL(string: self.endpoint) else { return nil }
         let apiKey = getAPIKey()
@@ -30,7 +29,7 @@ class GPTManager {
         request.setValue("Bearer \(String(describing: apiKey))", forHTTPHeaderField: "Authorization")
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
-        let requestBody = RequestBody(model: model, messages: [Message(role: "user", content: prompt)], max_tokens: maxTokens)
+        let requestBody = RequestBody(model: model, messages: [Message(role: "user", content: prompt)], max_tokens: maxTokens, tools: [Tool(function: Function(strict: true))])
         request.httpBody = try? JSONSerialization.data(withJSONObject: requestBody)
         
         
@@ -38,31 +37,39 @@ class GPTManager {
             let jsonData = try JSONEncoder().encode(requestBody)
             request.httpBody = jsonData
         } catch {
-            print("Encoding Error: \(error)")
+            print("Encoding Error: \(error)") //debug
             return nil
         }
         
+        let responseContent: String? = getDataFromURLSession(request: request)
+        
+                
+        return responseContent
+    }
+    
+    private func getDataFromURLSession(request: URLRequest) -> String? {
+        var responseContent: String?
+        
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let error = error {
-                print("Request Error: \(error)")
+                print("Request Error: \(error)") //debug
                 return
             }
             
             guard let data = data else {
-                print("No data catched")
+                print("No data catched") //debug
                 return
             }
             
             if let jsonResponse = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
-                
                 if let choices = jsonResponse["choices"] as? [[String: Any]],
                    let message = choices.first?["message"] as? [String: Any],
                    let content = message["content"] as? String {
-                    myContent = content
+                        responseContent = content
                 }
             }
         }.resume()
         
-        return myContent
+        return responseContent
     }
 }

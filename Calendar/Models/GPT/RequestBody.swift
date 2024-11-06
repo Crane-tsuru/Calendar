@@ -11,4 +11,5 @@ struct RequestBody: Codable {
     let model: String
     let messages: [Message]
     let max_tokens: Int
+    let tools: [Tool]
 }
