@@ -22,7 +22,6 @@
 		F3913B122CAD8C4A0045F1A8 /* ScheduleGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3913B112CAD8C4A0045F1A8 /* ScheduleGrid.swift */; };
 		F3913B142CAD948A0045F1A8 /* OnedayScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3913B132CAD948A0045F1A8 /* OnedayScheduleView.swift */; };
 		F39D753A2CAD390E0080D20A /* CalendarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D75392CAD390E0080D20A /* CalendarApp.swift */; };
-		F39D753C2CAD390E0080D20A /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D753B2CAD390E0080D20A /* CalendarView.swift */; };
 		F39D753E2CAD390F0080D20A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F39D753D2CAD390F0080D20A /* Assets.xcassets */; };
 		F39D75412CAD390F0080D20A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F39D75402CAD390F0080D20A /* Preview Assets.xcassets */; };
 		F39D754B2CAD390F0080D20A /* CalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D754A2CAD390F0080D20A /* CalendarTests.swift */; };
@@ -33,6 +32,7 @@
 		F3AC502B2CB3F9D10057A9A6 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F3AC502A2CB3F9D10057A9A6 /* FirebaseAnalytics */; };
 		F3AC502D2CB3F9DA0057A9A6 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F3AC502C2CB3F9DA0057A9A6 /* FirebaseFirestore */; };
 		F3CF2A892CE2255900068BAD /* ResponseFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CF2A882CE2255900068BAD /* ResponseFormat.swift */; };
+		F3CF2A8B2CE22D3B00068BAD /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CF2A8A2CE22D3B00068BAD /* SwiftUIView.swift */; };
 		F3F097122CAEDE26007EA868 /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F097112CAEDE26007EA868 /* EntryView.swift */; };
 		F3F097142CAEDFFC007EA868 /* LeftSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F097132CAEDFFC007EA868 /* LeftSheetView.swift */; };
 		F3F097162CAEE89F007EA868 /* ViewSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F097152CAEE89F007EA868 /* ViewSelect.swift */; };
@@ -74,7 +74,6 @@
 		F3913B132CAD948A0045F1A8 /* OnedayScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnedayScheduleView.swift; sourceTree = "<group>"; };
 		F39D75362CAD390E0080D20A /* Calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F39D75392CAD390E0080D20A /* CalendarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarApp.swift; sourceTree = "<group>"; };
-		F39D753B2CAD390E0080D20A /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		F39D753D2CAD390F0080D20A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F39D75402CAD390F0080D20A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F39D75462CAD390F0080D20A /* CalendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +84,7 @@
 		F39D75692CAD40E30080D20A /* fscalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fscalendar.swift; sourceTree = "<group>"; };
 		F39D756C2CAD57520080D20A /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		F3CF2A882CE2255900068BAD /* ResponseFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseFormat.swift; sourceTree = "<group>"; };
+		F3CF2A8A2CE22D3B00068BAD /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		F3F097112CAEDE26007EA868 /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
 		F3F097132CAEDFFC007EA868 /* LeftSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSheetView.swift; sourceTree = "<group>"; };
 		F3F097152CAEE89F007EA868 /* ViewSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSelect.swift; sourceTree = "<group>"; };
@@ -257,7 +257,6 @@
 		F39D75382CAD390E0080D20A /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
-				F39D753B2CAD390E0080D20A /* CalendarView.swift */,
 			);
 			path = Calendar;
 			sourceTree = "<group>";
@@ -318,6 +317,7 @@
 				F3F097112CAEDE26007EA868 /* EntryView.swift */,
 				F3F097132CAEDFFC007EA868 /* LeftSheetView.swift */,
 				9F5261702CB3B4E200B6CFCE /* AkatukiView.swift */,
+				F3CF2A8A2CE22D3B00068BAD /* SwiftUIView.swift */,
 				F3F097172CAEEBA3007EA868 /* Components */,
 			);
 			path = View;
@@ -473,12 +473,12 @@
 			files = (
 				F321B6632CAFF81B005C11EC /* User.swift in Sources */,
 				F321B6672CB04279005C11EC /* TaskViewModel.swift in Sources */,
+				F3CF2A8B2CE22D3B00068BAD /* SwiftUIView.swift in Sources */,
 				F3F0971B2CAEEBC7007EA868 /* LeftSheetButton.swift in Sources */,
 				F36952112CD8E70600A788AE /* RequestBody.swift in Sources */,
 				9F5261712CB3B4E200B6CFCE /* AkatukiView.swift in Sources */,
 				F3913B122CAD8C4A0045F1A8 /* ScheduleGrid.swift in Sources */,
 				F36952132CD8E7B500A788AE /* Message.swift in Sources */,
-				F39D753C2CAD390E0080D20A /* CalendarView.swift in Sources */,
 				F3F097162CAEE89F007EA868 /* ViewSelect.swift in Sources */,
 				F39D753A2CAD390E0080D20A /* CalendarApp.swift in Sources */,
 				F36952152CD8EAEF00A788AE /* ResponseBody.swift in Sources */,
