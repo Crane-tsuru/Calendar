@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct ResponseSchema: Codable {
+struct ResponseFormat: Codable {
     
 }
