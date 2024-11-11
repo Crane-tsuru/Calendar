@@ -16,7 +16,6 @@
 		F321B6652CAFF944005C11EC /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = F321B6642CAFF944005C11EC /* Task.swift */; };
 		F321B6672CB04279005C11EC /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F321B6662CB04278005C11EC /* TaskViewModel.swift */; };
 		F321B66B2CB04403005C11EC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F321B66A2CB04403005C11EC /* GoogleService-Info.plist */; };
-		F3554BD22CDA4E7E00055395 /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3554BD12CDA4E7E00055395 /* Tool.swift */; };
 		F36952112CD8E70600A788AE /* RequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36952102CD8E70600A788AE /* RequestBody.swift */; };
 		F36952132CD8E7B500A788AE /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36952122CD8E7B500A788AE /* Message.swift */; };
 		F36952152CD8EAEF00A788AE /* ResponseBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36952142CD8EAEF00A788AE /* ResponseBody.swift */; };
@@ -67,7 +66,6 @@
 		F321B6642CAFF944005C11EC /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		F321B6662CB04278005C11EC /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
 		F321B66A2CB04403005C11EC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
-		F3554BD12CDA4E7E00055395 /* Tool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
 		F36952102CD8E70600A788AE /* RequestBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBody.swift; sourceTree = "<group>"; };
 		F36952122CD8E7B500A788AE /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		F36952142CD8EAEF00A788AE /* ResponseBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseBody.swift; sourceTree = "<group>"; };
@@ -164,7 +162,6 @@
 				F3F95F262CD75E8C000F90F2 /* GPTManager.swift */,
 				F36952102CD8E70600A788AE /* RequestBody.swift */,
 				F36952122CD8E7B500A788AE /* Message.swift */,
-				F3554BD12CDA4E7E00055395 /* Tool.swift */,
 				F36952142CD8EAEF00A788AE /* ResponseBody.swift */,
 			);
 			path = GPT;
@@ -486,7 +483,6 @@
 				F3F097122CAEDE26007EA868 /* EntryView.swift in Sources */,
 				F3F097142CAEDFFC007EA868 /* LeftSheetView.swift in Sources */,
 				F39D756D2CAD57520080D20A /* Date.swift in Sources */,
-				F3554BD22CDA4E7E00055395 /* Tool.swift in Sources */,
 				F3913B142CAD948A0045F1A8 /* OnedayScheduleView.swift in Sources */,
 				F30920602CD0F47100729A96 /* Decoder.swift in Sources */,
 				F321B6652CAFF944005C11EC /* Task.swift in Sources */,

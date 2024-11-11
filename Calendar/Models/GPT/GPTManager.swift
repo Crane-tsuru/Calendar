@@ -29,9 +29,8 @@ class GPTManager {
         request.setValue("Bearer \(String(describing: apiKey))", forHTTPHeaderField: "Authorization")
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
-        let requestBody = RequestBody(model: model, messages: [Message(role: "user", content: prompt)], max_tokens: maxTokens, tools: [Tool(function: Function(strict: true))])
+        let requestBody = RequestBody(model: model, messages: [Message(role: "user", content: prompt)], max_tokens: maxTokens)
         request.httpBody = try? JSONSerialization.data(withJSONObject: requestBody)
-        
         
         do {
             let jsonData = try JSONEncoder().encode(requestBody)
@@ -43,7 +42,6 @@ class GPTManager {
         
         let responseContent: String? = getDataFromURLSession(request: request)
         
-                
         return responseContent
     }
     
