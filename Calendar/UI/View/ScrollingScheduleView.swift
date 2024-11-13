@@ -10,9 +10,12 @@ import SwiftUI
 struct ScrollingScheduleView: View {
     
     let columns = 20
-    let rows = 30
     
     private let timeStringManager = TimeStringManager()
+    
+    private let cellWidth: CGFloat = 70
+    
+    private let cellHeight: CGFloat = 50
     
     
     @State private var offset = CGPoint.zero
@@ -23,7 +26,7 @@ struct ScrollingScheduleView: View {
             
             VStack(alignment: .leading, spacing: 0) {
                 // empty corner
-                Color.clear.frame(width: 70, height: 50)
+                Color.clear.frame(width: cellWidth, height: cellHeight)
                 ScrollView([.vertical]) {
                     rowsHeader
                         .offset(y: offset.y)
@@ -51,7 +54,7 @@ struct ScrollingScheduleView: View {
                 Text("COL \(col)")
                     .foregroundColor(.secondary)
                     .font(.caption)
-                    .frame(width: 70, height: 50)
+                    .frame(width: cellWidth, height: cellHeight)
                     .border(Color.blue)
             }
         }
@@ -59,11 +62,11 @@ struct ScrollingScheduleView: View {
     
     var rowsHeader: some View {
         VStack(alignment: .leading, spacing: 0) {
-            ForEach(0..<rows, id: \.self) { row in
-                Text("ROW \(row)")
+            ForEach(timeStringManager.getHoursOneDate(), id:\.self) { hour in
+                Text(hour)
                     .foregroundColor(.secondary)
                     .font(.caption)
-                    .frame(width: 70, height: 50)
+                    .frame(width: cellWidth, height: cellHeight)
                     .border(Color.blue)
             }
         }
@@ -72,12 +75,12 @@ struct ScrollingScheduleView: View {
     var table: some View {
         ScrollView([.vertical, .horizontal]) {
             VStack(alignment: .leading, spacing: 0) {
-                ForEach(0..<rows, id: \.self) { row in
+                ForEach(0...timeStringManager.hours, id: \.self) { row in
                     HStack(alignment: .top, spacing: 0) {
                         ForEach(0..<columns, id: \.self) { col in
                             // Cell
                             Text("(\(row), \(col))")
-                                .frame(width: 70, height: 50)
+                                .frame(width: cellWidth, height: cellHeight)
                                 .border(Color.blue)
                                 .id("\(row)_\(col)")
                         }
