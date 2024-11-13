@@ -9,13 +9,13 @@ import SwiftUI
 
 struct ScrollingScheduleView: View {
     
-    let columns = 20
-    
     private let timeStringManager = TimeStringManager()
     
     private let cellWidth: CGFloat = 70
     
     private let cellHeight: CGFloat = 50
+    
+    private let dateList: [String] = (1...7).map { String(format: "%2d", $0) }
     
     
     @State private var offset = CGPoint.zero
@@ -50,9 +50,9 @@ struct ScrollingScheduleView: View {
     
     var colsHeader: some View {
         HStack(alignment: .top, spacing: 0) {
-            ForEach(0..<columns, id: \.self) { col in
-                Text("COL \(col)")
-                    .foregroundColor(.secondary)
+            ForEach(dateList, id: \.self) { date in
+                Text(date)
+                    .foregroundColor(.blue)
                     .font(.caption)
                     .frame(width: cellWidth, height: cellHeight)
                     .border(Color.blue)
@@ -77,7 +77,7 @@ struct ScrollingScheduleView: View {
             VStack(alignment: .leading, spacing: 0) {
                 ForEach(0...timeStringManager.hours, id: \.self) { row in
                     HStack(alignment: .top, spacing: 0) {
-                        ForEach(0..<columns, id: \.self) { col in
+                        ForEach(0..<dateList.count, id: \.self) { col in
                             // Cell
                             Text("(\(row), \(col))")
                                 .frame(width: cellWidth, height: cellHeight)
