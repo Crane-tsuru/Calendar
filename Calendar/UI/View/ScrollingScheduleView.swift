@@ -7,10 +7,13 @@
 
 import SwiftUI
 
-struct ContentView2: View {
+struct ScrollingScheduleView: View {
     
     let columns = 20
     let rows = 30
+    
+    private let timeStringManager = TimeStringManager()
+    
     
     @State private var offset = CGPoint.zero
     
@@ -104,5 +107,5 @@ struct ViewOffsetKey: PreferenceKey {
 }
 
 #Preview {
-    ContentView2()
+    ScrollingScheduleView()
 }
